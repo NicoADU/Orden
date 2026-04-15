@@ -1,4 +1,4 @@
-//Metodo estable
+//Meotodo estable
 
 import java.util.Arrays;
 
@@ -8,16 +8,16 @@ public class BubbleSort {
     public static <T extends Comparable<T>>
     void bubbleSort(T[] arr) {
         for(int i = 0; i < arr.length - 1; i++) {
-            boolean flag = false;
+            boolean indicador = false;
             for(int j = i; j < arr.length; j++) {
                 if(arr[j].compareTo(arr[i]) < 0) {
                     T aux = arr[j];
                     arr[j] = arr[i];
                     arr[i] = aux;
-                    flag = true;
+                    indicador = true;
                 }
             }
-            if(!flag) break;
+            if(!indicador) break;
         }
     }
 
